@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000;
+  font-family: 'Cinzel', serif;
+}
+
+.marco {
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle, #1a1a1a, #000);
+  border: none;
+  padding: 40px;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+  letter-spacing: 4px;
+  margin-bottom: 40px;
+}
+
+.entrada {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+input {
+  width: 60%;
+  background: transparent;
+  border: 2px solid white;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: #ccc;
+}
+
+button {
+  background: #666;
+  border: none;
+  padding: 10px 25px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+button:hover {
+  background: #888;
+}
+
+ul {
+  list-style: none;
+  margin-top: 30px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #aaa;
+}
+
+li::before {
+  content: "✦";
+  font-size: 20px;
+}
+
+li span {
+  flex: 1;
+  font-size: 18px;
+}
+
+.completa {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+li button {
+  background: transparent;
+  border: 1px solid white;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.error {
+  text-align: center;
+  color: #ff6b6b;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .entrada {
+    flex-direction: column;
+  }
+
+  input {
+    width: 100%;
+  }
+}
